@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dilkhush's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url('bgsm.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    margin: 0;
+    padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color:grey;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      .left{
+        text-size-adjust: 500px;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: color(black red green blue);
+        color: white;
+      }
+      nav ul a:hover {
+        color:black;
+      }
+      main hr {
+        border: 0;
+        background: black;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 140px 0;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+        margin: 30px 0;
+      }
+      .leftSection .btn {
+        font-size: 30px;
+        background-color: rgb(0, 4, 128);
+        color: white;
+        border: 2px solid white;
+        border-radius: 3.5px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 550px;
+    
+      }
+      .purple {
+        color: blueviolet;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        margin-bottom: 100px;
+        height: 80vh;
+      }
+      .secondsection h1 {
+        font-size: 1.9rem;
+      }
+      .secondsection .box {
+        background: whitesmoke;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 23px;
+        position: relative;
+        top: -23px;
+        left: -9px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      footer {
+        background-color: rgb(15, 15, 44);
+        color: white;
+        padding: 20px 0;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .footer > div {
+        flex: 1;
+        margin: 10px;
+        min-width: 200px;
+      }
+      .footer h3 {
+        margin-bottom: 15px;
+        color: blueviolet;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer ul li {
+        margin: 5px 0;
+      }
+      .footer ul li:hover {
+        color: blueviolet;
+        cursor: pointer;
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      .contact-form input:focus,
+      .contact-form textarea:focus {
+        border-color: blueviolet;
+        outline: none;
+      }
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form button:hover {
+        background-color: #5a2ea6;
+      }
+      .text-right {
+        text-align: center;
+        margin-top: 20px;
+        color: blueviolet;
+      }
+      @media (max-width: 768px) {
+        .footer {
+          flex-direction: column;
+          align-items: center;
+        }
+        .footer > div {
+          text-align: center;
+        }
+        .contact-form input,
+        .contact-form textarea {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Dilkhush's Portfolio</div>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <a href="/"><li>About</li></a>
+          <a href="/"><li>Services</li></a>
+          <a href="/"><li>Projects</li></a>
+          <a href="/"><li>Connect Me</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, MY name is <span class="purple">Dilkhush</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+          <div class="button">
+            <a href="resume.docx" alt="Resume"><button class="btn">Download Resume</button></a>
+            <a href="https://github.com/"> <button class="btn">Visit GIT HUB</button></a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="ai.jpg" alt="tech Image" />
+        </div>
+      </section>
+      <hr>
+      <section class="secondsection">
+        <span class="purple">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt=" " />
+            <div class="vertical-title">HTML Developer with CSS.</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt=" " />
+            <div class="vertical-title">Python Developer</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt=" " />
+            <div class="vertical-title">JAVA Developer</div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dev.png" alt=" " />
+            <div class="vertical-title">JavaScript</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Dilkhush's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>FAQs</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <h3>Contact Us</h3>
+          <form action="submit_form.php" method="post" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="text-right">
+        copyright&#169; www.dilkhushportfolio.in | All Rights Reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Engineer", "Digital Marketer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
